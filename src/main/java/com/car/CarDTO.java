@@ -5,6 +5,7 @@ import java.util.List;
 
 public class CarDTO {
 
+   private Car myCar;
 
    public String getMake() {
       return make;
@@ -41,6 +42,14 @@ public class CarDTO {
 
    public void setListOfItems(List<String> listOfItems) {
       this.listOfItems = listOfItems;
+   }
+
+   public Car getMyCar() {
+      return myCar;
+   }
+
+   public void setMyCar(Car myCar) {
+      this.myCar = myCar;
    }
 }
 

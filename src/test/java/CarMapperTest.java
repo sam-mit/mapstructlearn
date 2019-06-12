@@ -20,6 +20,7 @@ public class CarMapperTest {
     CarDTO carDto = CarMapper.INSTANCE.carToCarDTO( car );
 
     //then
+    assertThat( carDto.getMyCar()).isEqualTo(car);
     assertThat( carDto ).isNotNull();
     assertThat( carDto.getMake() ).isEqualTo( "Morris" );
     assertThat( carDto.getSeatCount() ).isEqualTo( 5 );
